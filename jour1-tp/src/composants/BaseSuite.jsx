@@ -52,3 +52,17 @@ function BaseSuite() {
 
 
 export default BaseSuite;
+
+// cas pratique créer le composant Exo3 
+// dans ce composant créer variable formation
+// [ { nom : "JS", duree : 5 } , { nom : "angular" , duree : 2 } , {  nom : "react" , duree : 15 }]
+
+// dans la partie vue du composant afficher toutes les formations
+
+/* <ul>
+    <li style={{ color : blue}}>JS durée 5 heures</li>
+    <li style={{ color : blue}}>angular durée 2 heures</li>
+    <li style={{ color : red}}>react durée 15 heures</li> 
+</ul> */
+
+// // si la durée > 10 réaliser une mise en forme simple

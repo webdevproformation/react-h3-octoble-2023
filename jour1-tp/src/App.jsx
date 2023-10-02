@@ -5,6 +5,7 @@ import Base from "./composants/Base"
 import { Fragment } from "react"
 import Exo2 from "./composants/Exo2";
 import BaseSuite from "./composants/BaseSuite";
+import Exo3 from "./composants/Exo3";
 
 function App(){
   // Bouton()
@@ -15,6 +16,7 @@ function App(){
     <Base />
     <Exo2 />
     <BaseSuite />
+    <Exo3 />
   </>
 }
 
