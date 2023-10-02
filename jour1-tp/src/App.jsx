@@ -12,10 +12,14 @@ import Liste from "./composants/Liste";
 import Article from "./composants/Article";
 import State from "./composants/State";
 import Ajax from "./composants/Ajax";
+import Exo5 from "./composants/Exo5";
+import Exo6 from "./composants/Exo6";
 
 function App(){
   // Bouton()
   return <>
+    <Exo6 />
+    <Exo5 />
     <State />
     <Ajax />
     {/** un commentaire dans du jsx  */}
