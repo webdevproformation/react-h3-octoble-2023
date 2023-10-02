@@ -1,0 +1,33 @@
+npm create vite
+nom du projet : jour1-tp 
+choisir => React (flêche du bas puis Enter)
+choisir => Javascript  (puis Enter)
+
+=> scaffold 
+
+=> aller jeter un coup d'oeil dans le dossier jour1-tp 
+
+=> le fichier package.json 
+
+=> il contient du json 
+=> avec la propriété "dependencies" : {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+} 
+
+cd jour1-tp # déplacer dans le dossier du projet
+npm i 
+npm install 
+
+npm run dev 
+# permet de lancer un serveur de dev local 
+
+http://localhost:5173/
+
+=> Cas pratique 
+
+=> télécharger Bootstrap (la librairie css )
+
+=> créer un composant qui s'appelle Navbar 
+
+=> ce composant ressemble à ça 

@@ -1,0 +1,9 @@
+React est librairie qui permet de créer 
+des interfaces visuelles 
+
+formulaire => Composant
+menu   => Composant
+bouton   => Composant 
+... 
+
+=> créer un premier composant => Bouton 

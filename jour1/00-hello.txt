@@ -1,0 +1,57 @@
+Bonjour
+
+Malik HARRIZ
+malik@webdevpro.net
+
+
+=> React (aujourd'hui) rappel
+=> React Native (créer des applications mobiles)
+=> Eval en fin de semaine (sous forme d'un énoncé format pdf )
+=> application avec des oeuvres / un back office (en React native)
+
+=> support   de cours :
+
+url : https://formation.webdevpro.net/react
+login : react 
+password : fb
+
+-------
+
+toutes les notes de cours seront partagées sur un dépôt github 
+=> quez je vais créer dans peu de temps 
+
+
+=> html => <h1> <p> balise 
+
+=> react => Composant 
+
+// class javascript 
+
+import React, { Component } from "react";
+
+class NavBar extends Component { <=====>   <nav> 
+  state = {};
+  render(){}
+}
+
+la nouvelle manière de créer des composants 
+
+function Navbar(){ 
+    // attention la PascalCase (première lettre du composant en majuscule )
+
+    return <p>bonjour</p> {/* attention ce n'est pas du html , c'est du jsx  */ }
+
+}
+
+export default NavBar ;
+
+
+pour utiliser React il faut au préalable avoir installé NodeJS 
+
+node -v 
+node --version 
+minimum sur la version 16 du runtime javascript 
+
+----------------
+
+
