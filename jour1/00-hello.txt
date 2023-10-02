@@ -18,6 +18,8 @@ password : fb
 -------
 
 toutes les notes de cours seront partagées sur un dépôt github 
+
+https://github.com/webdevproformation/react-h3-octoble-2023
 => quez je vais créer dans peu de temps 
 
 

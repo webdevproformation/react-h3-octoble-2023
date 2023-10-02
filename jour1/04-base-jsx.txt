@@ -1,0 +1,14 @@
+base de jsx 
+
+=> interpolation
+=> boucle 
+=> conditions
+=> evenement
+
+=> avant de se lancer installer une extension à Visual Studio code 
+
+=> snippet imr / ffc / sfc 
+=> générer la structure d'une composant 
+
+=> installer l'extension 
+Simple react Snippet de Burke Holland

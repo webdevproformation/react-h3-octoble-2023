@@ -7,3 +7,5 @@ bouton   => Composant
 ... 
 
 => créer un premier composant => Bouton 
+
+pour créer TOUS nos composants TOUJOURS travailler dans le dossier src 
