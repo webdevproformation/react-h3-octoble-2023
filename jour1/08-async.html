@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("debut") // 1
+        let articles = []
+        setTimeout(function(){
+            articles = ["article 1" , 'article 2']
+            console.log("ajax finie")
+        } , 1000) // 3 attendre 1 s => milieu
+        // je veux demander à javascript ATTEND que le setTimeout 
+        console.log(articles) // 2
+
+
+        let etudiants = [];
+
+        function getEtudiants (){
+            return new Promise(function(resolve, reject){
+                setTimeout( function(){
+                    resolve(["alain", "Céline"])
+                } , 5000 )
+            })
+        }
+
+        getEtudiants().then(etudiants => console.log(etudiants))
+
+        function fetch(){
+            return new Promise()
+        }
+
+    </script>
+</body>
+</html>

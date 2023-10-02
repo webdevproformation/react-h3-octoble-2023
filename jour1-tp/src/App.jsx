@@ -11,11 +11,13 @@ import Exo4 from "./composants/Exo4";
 import Liste from "./composants/Liste";
 import Article from "./composants/Article";
 import State from "./composants/State";
+import Ajax from "./composants/Ajax";
 
 function App(){
   // Bouton()
   return <>
     <State />
+    <Ajax />
     {/** un commentaire dans du jsx  */}
     <Exo1 />
     <Bouton />

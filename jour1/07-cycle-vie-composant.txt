@@ -1,0 +1,25 @@
+
+composant 
+
+function A(){
+
+}
+
+
+// Etapes dans son cycle de VIE 
+
+// monted  => va apparaitre à l'écran // requête AJAX 
+
+useEffect( function(){ // action à réaliser }  , []  )
+
+// updated => state est modifié / props est modifiée => 
+
+useEffect(function(){  //action } , [prop / state]  )
+
+// unmonted  => le composant est supprimé de l'écran 
+
+useEffect( function(){  // action ; return () => { 
+    // ici ce sont des actions qui seront exécutées uniquement lorsque le composant sera modifié 
+ } } , [] )
+
+// le hook useEffect() => exécuter lors d'une étape du cycle de vie du composant 
