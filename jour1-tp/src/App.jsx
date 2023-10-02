@@ -7,6 +7,7 @@ import Exo2 from "./composants/Exo2";
 import BaseSuite from "./composants/BaseSuite";
 import Exo3 from "./composants/Exo3";
 import Event from "./composants/Event";
+import Exo4 from "./composants/Exo4";
 
 function App(){
   // Bouton()
@@ -19,6 +20,7 @@ function App(){
     <BaseSuite />
     <Exo3 />
     <Event />
+    <Exo4 />
   </>
 }
 
