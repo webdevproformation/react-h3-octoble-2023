@@ -12,3 +12,15 @@ base de jsx
 
 => installer l'extension 
 Simple react Snippet de Burke Holland
+
+// créer le composant Exo2 
+// dans ce composant ce composant contient le jsx suivant 
+// <h1>Exo 2 </h1>
+// <p> lorem de 10 mots  </p>
+// balise <input type="text" >
+// br 
+// <button>
+
+//  le p doit être de couleur rouge et de taille de police 30px 
+
+// une fois créé => executer le composant Exo2 dans App 
