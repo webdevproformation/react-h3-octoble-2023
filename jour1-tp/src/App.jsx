@@ -10,10 +10,12 @@ import Event from "./composants/Event";
 import Exo4 from "./composants/Exo4";
 import Liste from "./composants/Liste";
 import Article from "./composants/Article";
+import State from "./composants/State";
 
 function App(){
   // Bouton()
   return <>
+    <State />
     {/** un commentaire dans du jsx  */}
     <Exo1 />
     <Bouton />

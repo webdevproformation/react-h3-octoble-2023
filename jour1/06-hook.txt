@@ -1,0 +1,21 @@
+Spécifique à React 
+
+- fonctions qui permettent des fonctionnalités profondes de React 
+- fonctions qui commencent par le use...
+-  useState()
+// permettre de stocker des valeurs qui sont propres au composant 
+// local au composant 
+// Virtual DOM 
+// unique SI on modifie l'état du composant via useState()
+// react avec mettre à jour le composant (uniquement la valeur modifié ) => Virtual DOM 
+// document.querySelector()
+
+-  useEffect() // ajax reqête vers des API 
+
+-  useReducer() // partager un state entre plusieurs composants 
+-  useContext() / createContext()
+-  useMemo()
+-  useCallback()
+
+
+=> https://react.dev/reference/react
