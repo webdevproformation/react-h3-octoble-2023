@@ -1,0 +1,29 @@
+
+Composant => Composant parent 
+
+import B from "./B"
+
+function A(){ {/** composant père */}
+    return <B nb={2} largeur={10} /> { /** composant enfant */ }
+    // propriétés 
+}
+
+Composant Enfant 
+
+function B(props){
+    return <p>{ props.largeur } </p>
+}
+
+
+App / pere 
+    Exo1 / enfant de APP
+    Exo2 / enfant de App et le père de Exo1
+        Exo1 
+
+position dans l'arbre des composants 
+
+// exo des compteurs 
+
+Liste 
+Compteur
+

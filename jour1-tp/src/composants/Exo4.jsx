@@ -4,6 +4,9 @@ function Exo4() {
         { nom : "angular" , duree : 2 , sommaire : ["init" , "deploiement"] } , 
         {  nom : "react" , duree : 15 , sommaire : ["dev" , "prod"] }
     ];
+
+    const message = (m) => { console.log(m) }
+
     return ( 
         <div>
             { formations.map(function(formation, key){
@@ -15,11 +18,10 @@ function Exo4() {
                             return <li key={key2}>{item}</li>
                         })  }
                     </ul>
-                    <button onClick={ () => console.log( formation.nom) }> Lire la suite ... </button>
+                    <button onClick={ () => message( formation.nom) }> Lire la suite ... </button>
                 </div>
             }) }
         </div>
-
      );
 }
 

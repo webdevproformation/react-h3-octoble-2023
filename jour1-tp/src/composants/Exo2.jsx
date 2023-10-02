@@ -1,3 +1,5 @@
+import Exo1 from "./Exo1";
+
 function Exo2 () {
     return <div>
             <h1>Exo 2 </h1>
@@ -7,6 +9,7 @@ function Exo2 () {
             <input type="text" placeholder="votre nom" />
             <br />
             <button>Envoyer</button>
+            <Exo1 />
         </div>
 }
 
