@@ -6,6 +6,7 @@ import { Fragment } from "react"
 import Exo2 from "./composants/Exo2";
 import BaseSuite from "./composants/BaseSuite";
 import Exo3 from "./composants/Exo3";
+import Event from "./composants/Event";
 
 function App(){
   // Bouton()
@@ -17,6 +18,7 @@ function App(){
     <Exo2 />
     <BaseSuite />
     <Exo3 />
+    <Event />
   </>
 }
 
