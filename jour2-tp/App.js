@@ -6,6 +6,7 @@ import MyBouton from './composants/MyBouton';
 import Exo2 from './composants/Exo2';
 import MyImages from './composants/MyImages';
 import Exo3 from './composants/Exo3';
+import AutreComposant from './composants/AutreComposant';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Exo3  />
         <MyImages />
         <Exo2 />
+        <AutreComposant />
         <Text>coucou les amis ! </Text>
         <Premier />
         <Exo1 />
