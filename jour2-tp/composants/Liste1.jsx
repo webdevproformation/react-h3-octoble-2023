@@ -24,3 +24,13 @@ function Liste() {
 }
 
 export default Liste;
+
+// créer le composant Exo4
+// importer useState par défaut sa valeur est à false 
+// dans la partie vue 
+// vous avez un bouton 
+// vous avez un Text
+// si vous cliquez sur le bouton une premier fois le texte affiché va être 
+// "Fin de journée"
+// si vous recliquez sur le bouton le texte affiché sera "début de journée"
+// { true  ?   :  }
