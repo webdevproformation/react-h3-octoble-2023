@@ -1,0 +1,26 @@
+// affichage du composant (mounted )
+//  => cocktails => [] (état 1)
+// => requete ajax dans un composant
+// récupérer le resultat de requete
+// remplir une variable etat du composant  => cocktails => [{},{}..]
+// mise à jour du render (return) du composant (=> tableau .map())
+
+// updated
+// recherche => ""
+// formulaire 
+// écrire dedans => nom / cocktail / département ... 
+// cliquer sur le bouton de soumission
+// modifier une état 
+// relancer la requête  ajax dans un composant
+// récupérer le nouveau resultat de requete
+// remplir une variable etat du composant
+// mise à jour du render (return) du composant (=> tableau .map())
+
+
+
+useEffect( function(){
+    fetch().then().then()
+} , [etat] )
+
+useEffect( function(){} , [] )
+useEffect( function(){} , [etat] )

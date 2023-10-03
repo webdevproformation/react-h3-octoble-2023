@@ -35,3 +35,15 @@ function Exo6() {
 }
 
 export default Exo6;
+
+
+// afficher la liste des cocktails proposés par l'adresse suivante 
+// https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
+// dans le composant React Exo7
+
+// strDrink et strDrinkThumb
+
+// => ajouter au début de la liste un input qui va vous permettre de changer le nom du cocktails  => margarita 
+// une fois que vous avez cliquer sur le bouton de soumission => afficher la nouvelle liste 
+
+

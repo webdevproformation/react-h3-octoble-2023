@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+            .then(function(response){ console.log(response) })
+
+        fetch("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+            .then(function(response){ return response.json() })
+            .then(function(data){ console.log(data)})
+
+        // jQuery => isntaller
+        // axios => NOdeJS => sur navigateur => installer 
+        // new XMLHttpRequest => par défaut 
+        // fetch() => par défaut et court à écrire 
+
+    </script>
+</body>
+</html>
