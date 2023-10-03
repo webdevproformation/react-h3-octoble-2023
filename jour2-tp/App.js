@@ -8,6 +8,7 @@ import MyImages from './composants/MyImages';
 import Exo3 from './composants/Exo3';
 import AutreComposant from './composants/AutreComposant';
 import Liste from './composants/Liste1';
+import Exo4 from './composants/Exo4';
 
 export default function App() {
   return (
@@ -17,13 +18,14 @@ export default function App() {
         <Exo3  />
         <MyImages />
         <Exo2 />
-        <AutreComposant />
+        <Exo4 />
+        {/* <AutreComposant /> */}
         <Text>coucou les amis ! </Text>
         <Premier />
         <Exo1 />
         <MyBouton />
           <View>
-            <Liste />
+            {/* <Liste /> */}
           </View>
         <StatusBar style="auto" />
       </ScrollView>
