@@ -1,0 +1,24 @@
+3 dossiers
+
+.expo => dossier technique qui permet de déterminer le hardware sur lequel vous allez travailler => ne pas toucher
+
+assets/ image / logo / font ... => stocker tous ces documents dans ce dossier 
+
+node_modules => toutes les dépendances du projet 
+ne pas toucher 
+
+6 fichiers 
+
+App.js => le point d'entrée de votre application 
+le composant racine 
+
+app.json => le fichier qui permet de présenter le projet en cas de publication 
+installer et télécharger l'application sur les store
+
+babel outil de traduction entre le jsx utilisé dans votre projet => le javascript de base outil 
+
+package.json 
+les scripts 
+"android": "expo start --android", => npm run android 
+"web": "expo start --web"
+

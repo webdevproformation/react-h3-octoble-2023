@@ -1,0 +1,40 @@
+si vous allez le fichier App.js 
+
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>coucou les amis ! </Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+Attention la grande différence vous n'avez plus accès aux balises html classique 
+
+<h1> 
+<p>
+<ul>
+<form>
+... => n'existe pas sur react native 
+
+=> react native met à disposion des composants qui rappellent les balises html 
+
+<Text></Text> => <h1> <h2> <p> 
+<View></View> => <div> <header> <footer>
+<Button />    => <button></button> => bouton de base que l'on ne peut pas styliser 
+
+<Touchable>
+    <Text></Text>   => bouton que l'on peut styliser 
+<Touchable> 
+
+=> liste des composants disponibles 
+
+=> StyleSheet => un composant qui permet de définir une feuille de style 
+=> grosse différence avec le html classique 
+=> vous devez créer une feuille de style par composant 
+=> il n'y a pas de conception d'attribut class / id dans les composant 
+
+dans le dossier jour2-tp créer un dossier qui s'appelle 
+composants
+
