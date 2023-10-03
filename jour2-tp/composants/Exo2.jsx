@@ -10,7 +10,7 @@ function Exo2() {
 export default Exo2;
 const style = StyleSheet.create({
     input : {
-        borderWidth : 2, borderBlockColor : 'black',
+        borderWidth : 2, borderColor : 'black',
         paddingVertical : 5, paddingHorizontal : 10,
         borderRadius : 5 ,
         marginBottom : 10 , width : 200

@@ -18,3 +18,11 @@ function MyImages() {
 }
 
 export default MyImages;
+
+// créer le composant Exo3
+// text => taille de 30 / couleur verte : marge externe de 20
+// ce composant contient le texte suivante : "Exo3"
+
+// zone de saisie appeler une nouvelle adresse web
+// un bouton de soumission
+// réaliser la mise en forme  
