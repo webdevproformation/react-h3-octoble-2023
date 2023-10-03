@@ -1,0 +1,35 @@
+la grande différence avec react (web) est qu'il faut installer sur votre ordinateur un emulateur de smartphone 
+
+=> nous allons avoir besoin d'installer un logiciel qui s'appelle 
+=> android studio (IDE)
+
+=> dans ce logiciel vous allez avoir besoin d'installer un émulateur de smartphone 
+
+=> installer un OS (Android)
+
+=> Expo qui va faire le lien entre Visual Studio code ET emulateur
+
+=> stopper react web 
+=> dans le terminal saisir Ctrl + C => stopper le processus 
+=> cd ..
+=> npx create-expo-app --template
+
+
+Visual Studio comme outil pour écrire notre code 
+
+lien entre les deux Expo Go => Bundler 
+
+prendre le code dans Visual Studio => json => code natif (Java) => le passer dans Emulateur (dans une application qui s'appelle expo GO)
+
+
+Android Studio + Emulateur + OS Android 
+ou
+version web 
+
+=> HMR => Hot Module Reload 
+
+=> il faut d'abord lancer Emulateur 
+=> en suite lancer la commande npm run android  
+
+r => reload 
+
