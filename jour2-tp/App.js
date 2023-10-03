@@ -4,10 +4,12 @@ import Premier from './composants/Premier';
 import Exo1 from './composants/Exo1';
 import MyBouton from './composants/MyBouton';
 import Exo2 from './composants/Exo2';
+import MyImages from './composants/MyImages';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <MyImages />
       <Exo2 />
       <Text>coucou les amis ! </Text>
       <Premier />
