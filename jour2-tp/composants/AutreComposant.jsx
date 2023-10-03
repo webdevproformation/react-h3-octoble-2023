@@ -1,6 +1,5 @@
 import { View , ActivityIndicator , Switch , Button , Alert} from "react-native"
 
-
 function AutreComposant() {
     const myAlert = () => {
         Alert.alert("titre en haut" , "message" , [

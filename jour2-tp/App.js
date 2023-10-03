@@ -7,10 +7,12 @@ import Exo2 from './composants/Exo2';
 import MyImages from './composants/MyImages';
 import Exo3 from './composants/Exo3';
 import AutreComposant from './composants/AutreComposant';
+import Liste from './composants/Liste1';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      
       <ScrollView>
         <Exo3  />
         <MyImages />
@@ -20,8 +22,12 @@ export default function App() {
         <Premier />
         <Exo1 />
         <MyBouton />
+          <View>
+            <Liste />
+          </View>
         <StatusBar style="auto" />
       </ScrollView>
+      
     </View>
   );
 }
