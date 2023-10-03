@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const [etudiants, setEtudiants] = useState([]);
+
+        useEffect( function(){
+            const liste = ["alain", "céline"];
+            setEtudiants(liste); 
+        }, [etudiants]) ; // etudiants un tableau 
+        // ce n'est pas la valeur dans le tableau 
+        // MAIS ref mémoire 
+
+    </script>
+
+</body>
+</html>

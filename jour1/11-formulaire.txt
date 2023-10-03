@@ -1,0 +1,25 @@
+
+
+dans react il existe 2 manières de gérer les formulaires 
+
+<form onSubmit={}>
+    <input  />
+    <input  />
+    <input  />
+</form>
+
+
+useEffect( function(){} , [])
+useEffect( function(){} , [etat1, etat2, etat3])
+
+<form >
+    <input onChange={} value={etat1} />
+    <input onChange={} value={etat2} />
+    <input onChange={} value={etat3} />
+</form>
+
+
+<form >
+    <input type="text" placeholder="rechercher un cocktails" name="recherche" onChange={handleChange} value={ text } /> 
+    <input type="submit" value="rechercher" />
+</form>

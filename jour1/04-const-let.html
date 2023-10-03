@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // valeur primitive 
+        // string / number / boolean
+
+        const a = "dix"
+        const b = 10 ;
+        const c = false ; 
+
+        // si tu travailles avec des valeurs complexes 
+        // tableau / objet 
+
+        const d = [1,2,3]; // d est un tableau quelquesoit sa valeur par la suite 
+        const e = { prop : 10 }; 
+
+        // pas de problème pour écrire
+
+        Object.freeze(d); // à écrire en + que le const 
+        d[0] = 1000 ; // OK 
+        console.log(d); 
+
+        // d = [4,5,6] ; // KO // change l'adresse mémoire  
+
+    </script>
+</body>
+</html>

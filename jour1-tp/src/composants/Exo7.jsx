@@ -31,12 +31,20 @@ function Exo7() {
         }
      }, [recherche])
 
-
+     const handleSubmit = function(e){
+        // bloquer le recherche automatique de la page
+        e.preventDefault();
+        const dataFormulaire = new FormData(e.target); // FormData 
+        setRecherche(dataFormulaire.get("recherche"));
+        // récupérer le texte écrit dans le champ de recherche du formulaire 
+        // modifie l'état recherche
+     }
 
     return (  <div>
         <h2>rechercher une cocktail</h2>
-        <form>
-
+        <form onSubmit={handleSubmit}>
+            <input type="text" placeholder="rechercher un cocktails" name="recherche" /> 
+            <input type="submit" value="rechercher" />
         </form>
         <h2>liste des résultats</h2>
         <ul>

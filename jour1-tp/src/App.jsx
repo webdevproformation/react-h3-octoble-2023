@@ -14,10 +14,14 @@ import State from "./composants/State";
 import Ajax from "./composants/Ajax";
 import Exo5 from "./composants/Exo5";
 import Exo6 from "./composants/Exo6";
+import Exo7 from "./composants/Exo7";
+import Exemple from "./composants/Exemple";
 
 function App(){
   // Bouton()
   return <>
+    <Exemple />
+    <Exo7 />
     <Exo6 />
     <Exo5 />
     <State />

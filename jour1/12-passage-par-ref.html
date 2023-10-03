@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a  = ["jasmin", "lilas"]; // référence mémoire
+        //const b = [...a] ;                   // référence mémoire copiée
+        const b = structuredClone (a) ;                   // référence mémoire copiée
+
+        b[0] = "tulipes";
+
+        // quelle est valeur de a ? ["jasmin", "lilas"]
+        console.log(a)
+        // quelle est valeur de b ? ["tulipes", "lilas"]
+        console.log(b)
+
+        const c = { nom : "Alain" };
+        //const d = {...c} ;
+        const d = structuredClone(c) ;
+
+        d.nom = "Céline";
+
+        console.log(c)
+        console.log(d)
+
+    </script>
+</body>
+</html>
