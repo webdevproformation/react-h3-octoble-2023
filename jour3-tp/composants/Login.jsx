@@ -1,10 +1,26 @@
-import { View , TextInput , StyleSheet } from "react-native"
+import { View , TextInput , StyleSheet , Button } from "react-native"
+import { useState } from "react"
 
-function Login() {
+function Login({navigation}) {
+    const [login, setLogin] = useState("")
+    const [password, setPassword] = useState("")
+
+    const handleSubmit = () => {
+        navigation.navigate("dashboard" , { identifiants : {login , password} })
+    }
     return ( <View style={{ alignItems: "center" }}>
-        <TextInput placeholder="login" style={style.input} />
-        <TextInput placeholder="password" secureTextEntry={true} style={style.input} />
-
+        <TextInput 
+            placeholder="login" 
+            style={style.input} 
+            value={login} 
+            onChangeText={function(text){ setLogin(text) }} />
+        <TextInput 
+            placeholder="password" 
+            secureTextEntry={true} 
+            style={style.input}  
+            value={password} 
+            onChangeText={function(text){ setPassword(text) }}/>
+        <Button title={"connexion"} onPress={handleSubmit} />
     </View> );
 }
 

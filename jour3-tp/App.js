@@ -5,6 +5,7 @@ import Profil from './composants/Profil';
 import { NavigationContainer } from "@react-navigation/native"
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import Login from './composants/Login';
+import Dashboard from './composants/Dashboard';
 
 const Stack = createNativeStackNavigator()
 
@@ -16,6 +17,7 @@ export default function App() {
           <Stack.Screen component={Accueil} name="accueil" />
           <Stack.Screen component={Profil} name="profil"/>
           <Stack.Screen component={Login} name="login"/>
+          <Stack.Screen component={Dashboard} name="dashboard"/>
         </Stack.Navigator>
       </NavigationContainer>
       {/*<Accueil />
