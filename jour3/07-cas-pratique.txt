@@ -1,0 +1,15 @@
+cas pratique 
+
+créer un nouveau projet sur votre ordinateur React native
+
+sur ce projet s'appelle jour3-tp 
+
+=> Créer un composant qui s'appelle Accueil 
+<Text> qui affiche le mot accueil 
+
+--- 
+
+=> Créer un autre composant qui s'appelle profil 
+<Text> qui affiche le mot profil  
+
+npx create-expo-app --template
