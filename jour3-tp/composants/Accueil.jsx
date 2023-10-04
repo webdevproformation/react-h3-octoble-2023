@@ -1,10 +1,18 @@
-import { Text , View } from "react-native"
-
-function Accueil() {
-    return ( <View style={{ flex : 1 , justifyContent: "center" }}>
+import { Text , View , Button } from "react-native"
+function Accueil({navigation}) {
+    const handleClick = function(){
+        navigation.navigate("profil") // la valeur de name à utiliser 
+    }
+    return ( <View style={{ flex : 1 , justifyContent: "center" , alignItems : "center" }}>
         <Text>Open up App.js to start working on your app!</Text>
         <Text >Accueil</Text>
+        <Button title="voir le profil" onPress={handleClick} />
     </View> );
 }
-
 export default Accueil;
+
+// cas pratique => créer un composant Login 
+// dans ce composant créer un formulaire avec deux input 
+// login et un password 
+// ce formulaire est accessible de depuis l'écran d'Accueil via un bouton "Connexion"
+// 
