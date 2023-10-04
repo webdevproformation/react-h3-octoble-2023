@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body, h1,p{
+            margin: 0;
+            padding: 0;
+        } */
+        /* reset supprimer la feuille de style par défaut du navigateur*/
+        .item1{
+            display: flex; /* dans la version web p sont l'un à côté de l'autre */
+            /* flex-direction: column;   sur React Native c'est l'inverse */
+            flex-direction: row  ; /* à mettre OBLIGATOIRE sur react native*/
+            /*attention sur React native dès que vous ajouter un composant <View> automatique il a la propriété  display: flex; */
+        }
+    </style>
+</head>
+<body>
+    <h1>bonjour</h1>
+    <section class="item1"> <!-- <View> -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, ipsum!</p>
+        <p>Rerum accusantium magnam est consequatur dolorum, asperiores quis eligendi ipsa!</p>
+        <p>Qui, veniam cumque. Aliquam delectus itaque, maiores quas praesentium omnis?</p>
+        <p>Sapiente ratione sint laboriosam maiores, non alias dignissimos eius expedita?</p>
+        <p>Distinctio facere debitis illum sequi porro tenetur at aperiam quod!</p>
+    </section> <!-- </View> -->
+</body>
+</html>

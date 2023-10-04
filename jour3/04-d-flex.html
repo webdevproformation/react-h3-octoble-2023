@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1{
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+        }
+        .btn1{
+            flex:1 ; /* augmenter la largeur de l'élément pour qu'il remplace l'espace disponible */
+            margin-right: 10px;
+        }
+        .btn2{
+            margin-left: 10px;
+            flex:1 ;  /* déterminer la largeur des éléments */
+        }
+    </style>
+</head>
+<body>
+    <section class="item1">
+        <button class="btn1">action1</button>
+        <button class="btn2">action2</button>
+    </section>
+</body>
+</html>

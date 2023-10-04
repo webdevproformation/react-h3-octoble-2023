@@ -1,0 +1,5 @@
+lorsque vous devez réaliser une mise en page sur React native 
+
+=> dans la documentation il est mentionné utiliser display flex 
+=> le display flex de React native est différent du display flex sur le web 
+

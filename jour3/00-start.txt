@@ -1,0 +1,39 @@
+<a href=""></a>
+
+=> n'existe pas en React Native 
+=> Routage 
+tableau 
+[
+    "addresse1" => "afficher Composant 1" 
+    "addresse2" => "afficher Composant 2" 
+]
+
+// Outlet (react native) => page / screen
+
+=> Firebase Avec React Native 
+
+<div> => <View>
+<p> <h1> => <Text>
+<input type="text"> <textarea> <input type="checkbox"> => <TextInput> <Switch>
+=> <ActivityIndicator> => spinner
+=> Alert => alert()
+=> <FlatList> => <ul> <ol> 
+=> <ScrollView> => View avec la barre de défilement
+=> StyleSheet => feuille de style locale au composant 
+=> Button => button très simple (text et le fond)
+=> <Touchable><Text></Text></Touchable> => bouton personnalisable
+
+=> Attention warning si vous imbriqué (neste)
+<ScrollView> dans <FlatList>
+
+=> Image => <img src="" alt="">
+    => <Image source={require("../assets/local.png")} />
+    => <Image source={{ uri : "www" , width: "200" , height : "200"  }} />
+
+=> <a href=""> => voir aujourd'hui !! 
+
+https://formation.webdevpro.net/react-native/
+login : react-native 
+password : facebook
+
+Mise en forme
