@@ -1,4 +1,5 @@
 import { Text , View , Button } from "react-native"
+import Recherche from "./Recherche"
 function Accueil({navigation}) {
     const handleClick = function(){
         navigation.navigate("profil") // la valeur de name à utiliser 
@@ -13,6 +14,7 @@ function Accueil({navigation}) {
         <Text >Accueil</Text>
         <Button title="voir le profil" onPress={handleClick} />
         <Button title="se connecter" onPress={handleClickConnexion} />
+        <Recherche navigation={navigation} />
     </View> );
 }
 export default Accueil;
