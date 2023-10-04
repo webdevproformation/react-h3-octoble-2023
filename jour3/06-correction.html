@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .card{
+            width: 350px; /* Dimension */
+            height: 150px;
+            background: #aaa;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            color:white;
+            font-family: sans-serif;
+        }
+        .zone-gauche{
+            flex: 3;
+        }
+        .zone-droite{
+            flex: 1;
+            text-align: center;
+        }
+        .zone-gauche-top{
+            display: flex;
+            align-items: center;
+        }
+        .zone-gauche-top img{
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .zone-gauche-top h2{
+            font-size: 18px;
+        }
+        .zone-gauche-top h3{
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .zone-gauche-bottom{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .zone-gauche-social{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            text-align: center;
+        }
+        .zone-droite-top{
+            font-size: 40px;
+            line-height: 10px;
+            margin-bottom: 50px;
+        }
+        .zone-droite-middle{
+            display: flex;
+            flex-direction: column;
+        }
+        .zone-droite-middle .number{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <section class="card">
+        <div class="zone-gauche">
+            <div class="zone-gauche-top">
+                <img src="http://via.placeholder.com/70x70" alt="">
+                <div class="zone-gauche-nom">
+                    <h2>Prénom Nom</h2>
+                    <h3>description</h3>
+                </div>
+            </div>
+            <div class="zone-gauche-bottom">
+                <div class="zone-gauche-social">
+                    <span class="number">2222</span>
+                    <span class="text">Lorem.</span>
+                </div>
+                <div class="zone-gauche-social">
+                    <span class="number">2222</span>
+                    <span class="text">Lorem.</span>
+                </div>
+                <div class="zone-gauche-social">
+                    <span class="number">2222</span>
+                    <span class="text">Lorem.</span>
+                </div>
+            </div>
+        </div>
+        <div class="zone-droite">
+            <div class="zone-droite-top">
+                ...
+            </div>
+            <div class="zone-droite-middle">
+                <span class="number">1</span>
+                <span class="text">Ranking</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
