@@ -35,7 +35,6 @@ function Pays({route}) {
                 <Text> capitale : {item.capital[0]}</Text>
             </View>
             } }
-        
         />
     </View>  );
 }

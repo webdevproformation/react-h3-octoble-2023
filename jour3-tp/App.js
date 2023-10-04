@@ -7,7 +7,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import Login from './composants/Login';
 import Dashboard from './composants/Dashboard';
 import Pays from './composants/Pays';
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 
+const Tabs = createBottomTabNavigator();
 const Stack = createNativeStackNavigator()
 
 export default function App() {

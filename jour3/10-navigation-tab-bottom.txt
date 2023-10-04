@@ -1,0 +1,19 @@
+stopper le serveur Expo Go 
+
+npm install @react-navigation/bottom-tabs react-native-vector-icons
+npx expo install react-native-gesture-handler
+
+npm run android
+
+// deux navigations en même temps 
+
+
+//
+Page d'accueil => 
+    voir profil 
+    se connecter
+    Rechercher 
+
+Lien direct vers la page de connexion 
+
+// navigation imbriquée 
