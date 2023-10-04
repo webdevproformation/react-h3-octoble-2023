@@ -19,3 +19,9 @@ const style = StyleSheet.create({
         marginVertical : 20
     }
 })
+
+// cas pratique 
+// créer un nouveau composant qui s'appelle Dashboard 
+// se composant est accessible via un bouton qui est disponible dans le composant Login 
+// lors du clique sur le bouton login => envoyer les informations saisies vers la nouvelle page 
+// à afficher dans le composant Dashboard 
