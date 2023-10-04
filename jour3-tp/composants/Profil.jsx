@@ -6,22 +6,22 @@ function Profil() {
         <View style={style.zoneGaucheTop}>
             <Image source={{ uri : "http://via.placeholder.com/50x50" , width:50, height: 50 }}  style={style.img}/>
             <View style={style.zoneGaucheNom}>
-                <Text style={style.h2}>Prénom Nom</Text>
-                <Text style={style.h3}>description</Text>
+                <Text style={[style.h2, style.textWhite]}>Prénom Nom</Text>
+                <Text style={[style.h3, style.textWhite]}>description</Text>
             </View>
         </View>
         <View style={style.zoneGaucheBottom}>
             <View style={style.zoneGaucheSocial}>
-                <Text style={[style.number , style.center]}>2222</Text>
-                <Text style={[style.text , style.center]}>Lorem.</Text>
+                <Text style={[style.number , style.center, style.textWhite]}>2222</Text>
+                <Text style={[style.text , style.center , style.textWhite]}>Lorem.</Text>
             </View>
             <View style={style.zoneGaucheSocial}>
-                <Text style={[style.number , style.center]}>2222</Text>
-                <Text style={[style.text , style.center]}>Lorem.</Text>
+                <Text style={[style.number , style.center, style.textWhite]}>2222</Text>
+                <Text style={[style.text , style.center , style.textWhite]}>Lorem.</Text>
             </View>
             <View style={style.zoneGaucheSocial}>
-                <Text style={[style.number , style.center]}>2222</Text>
-                <Text style={[style.text , style.center]}>Lorem.</Text>
+                <Text style={[style.number , style.center, style.textWhite]}>2222</Text>
+                <Text style={[style.text , style.center , style.textWhite]}>Lorem.</Text>
             </View>
         </View>
     </View>
@@ -43,6 +43,9 @@ const style = StyleSheet.create({
     mb30: {
         marginBottom : 30
     },
+    textWhite : {
+        color : "white"
+    },
     center : {
         textAlign : "center"
     },
@@ -53,7 +56,7 @@ const style = StyleSheet.create({
         flexDirection : "row", 
         borderRadius: 15,
         color:"white",
-        fontFamily: "sans-serif",
+        fontFamily: "sans-serif"
     },
     zoneGauche :{
         flex: 3,

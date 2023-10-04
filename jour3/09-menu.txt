@@ -1,0 +1,37 @@
+une solution apportée par la communauté
+
+=> https://reactnavigation.org
+
+3 manières de créer de la navigation dans React Native 
+
+=> navigation de type Stack => lien hypertexte 
+
+=> navigation de type Bottom Tabs => menu en bas
+
+=> navigation Drawer  => bouton qui fait apparaître un menu sur la gauche en glissé !
+
+=> vous pouvez les utiliser en même temps 
+
+=> par défaut la navigation n'est pas installée 
+
+=> ajouter de nouvelles dépendances à notre projet 
+
+=> Stopper Expo 
+
+npm install @react-navigation/native @react-navigation/native-stack
+
+npx expo install react-native-screens react-native-safe-area-context
+
+
+Dans le composant App.js 
+
+<NavigatorContainer> {écouter quand on veut changer de screen }
+    <Stack.Navigator> {  tableau de routage  }
+        <Stack.Screen component={Accueil} name="accueil" />
+                {  le composant à afficher // l'adresse internet    }
+        <Stack.Screen />
+        <Stack.Screen />
+        <Stack.Screen />
+    </Stack.Navigator>
+</NavigatorContainer>
+
