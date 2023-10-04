@@ -1,28 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Accueil from './composants/Accueil';
-import Profil from './composants/Profil';
-import { NavigationContainer } from "@react-navigation/native"
-import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import Login from './composants/Login';
-import Dashboard from './composants/Dashboard';
-import Pays from './composants/Pays';
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
+import { StyleSheet, View } from 'react-native';
 
+import { NavigationContainer } from "@react-navigation/native"
+
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
+import NavigationAccueil from './navigation/NavigationAccueil';
+import Profil from './composants/Profil';
 const Tabs = createBottomTabNavigator();
-const Stack = createNativeStackNavigator()
+
+
 
 export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen component={Accueil} name="accueil" />
-          <Stack.Screen component={Profil} name="profil"/>
-          <Stack.Screen component={Login} name="login"/>
-          <Stack.Screen component={Dashboard} name="dashboard"/>
-          <Stack.Screen component={Pays} name="pays"/>
-        </Stack.Navigator>
+        <Tabs.Navigator>
+          <Tabs.Screen component={NavigationAccueil} name="home" />
+          <Tabs.Screen component={Profil} name="profil"/>
+        </Tabs.Navigator>
       </NavigationContainer>
       {/*<Accueil />
       <Profil /> */}
