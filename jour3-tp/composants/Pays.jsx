@@ -11,6 +11,7 @@ function Pays({route}) {
             .then(function(reponse){ return reponse.json()})
             .then(function(data){ 
                 if(Array.isArray(data)){
+                    console.log(data);
                     setResultat(data)
                     return ;
                 }
@@ -22,20 +23,20 @@ function Pays({route}) {
 
         <Text > {route.params.pays} </Text>
         {resultat.length === 0 ? <Text>aucun pays ne correspond à cette recherche en bdd</Text> : <Text>nombre de pays trouvé : {resultat.length}</Text>}
-        
+        {resultat.length !== 0 && 
         <FlatList 
             numColumns={2}
             ItemSeparatorComponent={function(){ return <Text>-</Text> }}
             data={ resultat }
             renderItem={function({item}){
                 return <View style={{ marginHorizontal : 5 }}>
-                <Text>nom pays : {item.name.common}</Text>
-                <Text>population : { new Intl.NumberFormat("fr-Fr").format( item.population )}</Text>
-                <Image source={{uri : item.flags.png , width: 150 , height : 100}} />
-                <Text> capitale : {item.capital[0]}</Text>
+                <Text>nom pays : {item?.name?.common}</Text>
+                <Text>population : { new Intl.NumberFormat("fr-Fr").format( item?.population )}</Text>
+                <Image source={{uri : item?.flags?.png , width: 150 , height : 100}} /> 
+                <Text> capitale : {item?.capital ? item?.capital[0] : ""}</Text>
             </View>
             } }
-        />
+        />}
     </View>  );
 }
 

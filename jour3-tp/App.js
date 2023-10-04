@@ -43,6 +43,6 @@ const styles = StyleSheet.create({
 
 // cas pratique 
 // ajouter un nouveau lien dans la barre de navigation tabs
-// qui va mener vers le composant Dashboard
-// dans le composant Dashboard ajouter une bouton qui mène vers le composant qui s'appelle Option 
-// ce composant est accessible via une navigation Stack directement disponible dans le composant Dashboard
+// qui va mener vers le composant Preference (à créer)
+// dans le composant Preference ajouter une bouton qui mène vers le composant qui s'appelle Option 
+// ce composant est accessible via une navigation Stack directement disponible dans le composant Preference
