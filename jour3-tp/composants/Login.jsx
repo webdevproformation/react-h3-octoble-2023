@@ -25,3 +25,7 @@ const style = StyleSheet.create({
 // se composant est accessible via un bouton qui est disponible dans le composant Login 
 // lors du clique sur le bouton login => envoyer les informations saisies vers la nouvelle page 
 // à afficher dans le composant Dashboard 
+
+// navigation.navigate('dashboard', { identifiants: { login : '', password : '' } }) ;
+
+// dans la page Dashboard vous utilisez le paramètre route.params
