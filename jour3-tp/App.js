@@ -7,16 +7,25 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import NavigationAccueil from './navigation/NavigationAccueil';
 import Profil from './composants/Profil';
 const Tabs = createBottomTabNavigator();
+import Icone from "react-native-vector-icons/Foundation"
 
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <NavigationContainer>
-        <Tabs.Navigator>
-          <Tabs.Screen component={NavigationAccueil} name="home" />
-          <Tabs.Screen component={Profil} name="profil"/>
+      <NavigationContainer >
+        <Tabs.Navigator screenOptions={{ headerShown : false}}>
+          <Tabs.Screen component={NavigationAccueil} name="home" options={{
+            tabBarIcon : function(){
+              return <Icone size={30} color={"black"} name="home"/>
+            }
+          }} />
+          <Tabs.Screen component={Profil} name="profil" options={{
+            tabBarIcon : function(){
+              return <Icone size={30} color={"black"} name="eye"/>
+            }
+          }}/>
         </Tabs.Navigator>
       </NavigationContainer>
       {/*<Accueil />

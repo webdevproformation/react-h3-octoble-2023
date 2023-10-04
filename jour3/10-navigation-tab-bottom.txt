@@ -17,3 +17,5 @@ Page d'accueil =>
 Lien direct vers la page de connexion 
 
 // navigation imbriquée 
+
+// react-native-vector-icons 
