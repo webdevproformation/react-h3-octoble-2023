@@ -90,7 +90,8 @@ const styles = StyleSheet.create({
 
 // ---------------
 
-// cas pratique créer une nouvelle collection dans la base de données 
+// cas pratique : 
+// créer une nouvelle collection dans la base de données 
 // Formation
 // contient 3 champs 
 // nom 
@@ -98,3 +99,6 @@ const styles = StyleSheet.create({
 // date_debut
 
 // réaliser le CRUD pour ce nouveau domaine 
+
+// https://docs.expo.dev/versions/latest/sdk/date-time-picker/
+// https://github.com/react-native-datetimepicker/datetimepicker

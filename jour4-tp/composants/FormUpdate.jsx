@@ -4,12 +4,14 @@ import { schemaEtudiant } from "../verif/etudiant"
 import db from "../config"
 import {  getDoc, updateDoc , doc  } from "firebase/firestore"
 
+
 const FormUpdate =  ({navigation , route }) => {
     const [id, setId]= useState("");
     const [nom, setNom]= useState("");
     const [age, setAge]= useState("0");
     const [email, setEmail]= useState("");
     const [erreurs, setErreurs]= useState([]);
+   
 
     useEffect( function(){
         const id = route.params.id;

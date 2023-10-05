@@ -52,6 +52,9 @@ const Accueil = ({navigation}) => {
             </View>
          }}
       />
+      <Button onPress={function(){
+        navigation.navigate("create-formation")
+      }} title="créer une nouvelle formation" color="red" />
     </View>
   )
 }
