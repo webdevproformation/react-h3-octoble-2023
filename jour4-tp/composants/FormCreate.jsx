@@ -87,3 +87,14 @@ const styles = StyleSheet.create({
 // créer composant qui s'appelle FormUpdate 
 // ce formulaire ressemble au formulaire FormCreate
 // la différence est que le formulaire doit être remplit avec les valeurs présentes en base de données
+
+// ---------------
+
+// cas pratique créer une nouvelle collection dans la base de données 
+// Formation
+// contient 3 champs 
+// nom 
+// description 
+// date_debut
+
+// réaliser le CRUD pour ce nouveau domaine 
