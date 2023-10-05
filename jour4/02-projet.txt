@@ -1,0 +1,9 @@
+créer un nouveau projet React Native 
+
+stopper Expo 
+se positionner dans le dossier racine "react"
+
+npx create-expo-app --template
+
+cd jour4-tp 
+npm i firebase joi 

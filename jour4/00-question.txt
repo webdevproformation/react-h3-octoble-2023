@@ -1,0 +1,60 @@
+sur React Native 
+
+<View style={{ flexDirection: "row" }}>
+    <Text>hello</Text>
+    <Button title="btn" color="red" onPress={}/>
+</View>
+
+liens 
+=> télécharger des modules 
+=> @react-navigation/native-stack
+=> @react-navigation/bottom-tabs
+
+dans le fichier App.js 
+
+<NavigatorContainer>
+    {/*router*/}
+    <Stack.Navigator>
+        <Stack.Screen component={Accueil} name="accueil"/>
+    </Stack.Navigator>
+</NavigatorContainer>
+
+
+<Button title="aller à l'accueil" color="red" onPress={function(){
+    navigation.navigate("accueil")
+}}/>
+
+<a href="accueil">aller à l'accueil</a>
+
+
+<NavigatorContainer>
+    {/*router*/}
+    <Tab.Navigator>
+        <Tab.Screen component={Accueil} name="accueil" options={{
+            tabBarIcon: function(){ return <Icone /> }
+        }}/>
+    </Tab.Navigator>
+</NavigatorContainer>
+
+
+
+fetch("...pays") demander des données à une API 
+    .then(function(reponse){ return reponse.json() })
+    .then(function(data) { data  })
+
+GET 
+
+CRUD =>
+Create  => ajouter ???
+Read => fetch()
+Update  => modifier 
+Delete  => supprimer ??? 
+
+=> si le cours avait durée 2 semaines 
+=> NodeJS + Express + Mongodb (back) 
+
+=> React native + fetch 
+
+=> nous allons utiliser un site internet qui permet de rapidement créer une base de données et des tables très facilement 
+
+=> site internet met à dispose de librairie qui l'on va utiliser à la place de fetch  
