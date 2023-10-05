@@ -54,7 +54,6 @@ import { collection , addDoc , getDocs , query, where } from "firebase/firestore
     }
   return (
     <View>
-        
       <Text>Créer un nouveau profil étudiant</Text>
       <TextInput placeholder="nom" onChangeText={function(text){ setNom(text) ; setErreurs([]);}} value={nom} style={styles.input} />
       <TextInput placeholder="age" onChangeText={function(text){ setAge(text) ; setErreurs([]);}} value={age} style={styles.input} keyboardType="numeric"/>
@@ -85,3 +84,6 @@ const styles = StyleSheet.create({
 // npm install @react-navigation/native @react-navigation/native-stack
 // npx expo install react-native-screens react-native-safe-area-context
 // ajouter dans l'écran d'Accueil un lien qui va permettre d'afficher le formulaire que l'on vient de créer 
+
+
+// créer

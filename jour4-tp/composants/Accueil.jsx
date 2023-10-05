@@ -24,7 +24,7 @@ const Accueil = ({navigation}) => {
         // fetch(".../id", {DELETE}).then(reponse)
         deleteDoc(doc(db , "etudiant" , id)).then(function(){
             setUpdateList(!updateList);
-        })
+        });
     }
 
   return (
