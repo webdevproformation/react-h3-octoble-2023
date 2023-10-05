@@ -6,12 +6,12 @@ import { schemaEtudiant } from "../verif/etudiant"
 import db from "../config"
 import { collection , addDoc , getDocs , query, where } from "firebase/firestore"
 
-const FormCreate = () => {
+ const FormCreate =  () => {
     const [nom, setNom]= useState("");
     const [age, setAge]= useState("0");
     const [email, setEmail]= useState("");
     const [erreurs, setErreurs]= useState([]);
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         console.log(nom , age , email); 
         const etudiant = { nom , age , email }
         const { error } = schemaEtudiant.validate( etudiant , {abortEarly : false}); 
@@ -24,21 +24,28 @@ const FormCreate = () => {
 
              // vérifier si on a un utilisateur qui a déjà le même email que celui saisit
              const q = query(collection(db, "etudiant"), where("email", "==", etudiant.email));
-             getDocs(q).then(function(querySnapshot ){
-                querySnapshot.forEach((doc) => {
-                    // doc.data() is never undefined for query doc snapshots
-                    console.log(doc.id, " => ", doc.data());
-                  })
-             })
 
-             return ;
+            const querySnapshot =  await getDocs(q)
+            const test = [] ;
 
-             addDoc(collection(db, "etudiant") , etudiant).then(function(reponse){
-                setNom("")
-                setAge("0")
-                setEmail("")
-                alert("le profil utilisateur est bien créé en base de donnée")
-             })
+            querySnapshot.forEach((doc) => {
+                test.push(doc.id)
+                console.log(doc.id, " => ", doc.data());
+            })
+            
+            if(test.length > 0){
+                setErreurs(["attention email est déjà utilisé"])
+                return ;
+            }   
+             
+            // ici on va pouvoir effecter l'ajout
+            await addDoc(collection(db, "etudiant") , etudiant) ;
+
+            setNom("")
+            setAge("0")
+            setEmail("")
+            alert("le profil utilisateur est bien créé en base de donnée")
+             
         }else {
             const tableauErreurs = error.details.map(function(item){ return item.message });
             setErreurs(tableauErreurs);
