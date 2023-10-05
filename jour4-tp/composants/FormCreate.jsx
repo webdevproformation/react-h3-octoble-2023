@@ -1,6 +1,6 @@
 // rnfes
 // extension ajouter en plus l'extension 
-import { StyleSheet, Text, View , Button , TextInput } from 'react-native'
+import { StyleSheet, Text, View , Button , TextInput , FlatList } from 'react-native'
 import React , {useState} from 'react'
 import { schemaEtudiant } from "../verif/etudiant"
 import db from "../config"
@@ -10,6 +10,7 @@ const FormCreate = () => {
     const [nom, setNom]= useState("");
     const [age, setAge]= useState("0");
     const [email, setEmail]= useState("");
+    const [erreurs, setErreurs]= useState([]);
     const handleSubmit = () => {
         console.log(nom , age , email); 
         const etudiant = { nom , age , email }
@@ -19,7 +20,14 @@ const FormCreate = () => {
         if(!error){ // si erreur est undefined 
              // ajouter dans Firebase 
              // ajouter une nouvelle ligne dans la table etudiant
-             addDoc(collection(db, "etudiant") , etudiant)
+             addDoc(collection(db, "etudiant") , etudiant).then(function(reponse){
+                setNom("")
+                setAge("0")
+                setEmail("")
+                alert("le profil utilisateur est bien créé en base de donnée")
+             })
+        }else {
+            console.log(error)
         }
 
     }
@@ -30,6 +38,10 @@ const FormCreate = () => {
       <TextInput placeholder="age" onChangeText={function(text){ setAge(text)}} value={age} style={styles.input} keyboardType="numeric"/>
       <TextInput placeholder="email" onChangeText={function(text){ setEmail(text)}} value={email} style={styles.input}/>
       <Button title="créer" onPress={handleSubmit} />
+      <FlatList 
+        data={erreurs}
+        renderItem={function({item}){ return <Text>{item}</Text> }}
+      />
     </View>
   )
 }
