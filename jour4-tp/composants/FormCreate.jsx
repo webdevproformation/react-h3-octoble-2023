@@ -6,7 +6,7 @@ import { schemaEtudiant } from "../verif/etudiant"
 import db from "../config"
 import { collection , addDoc , getDocs , query, where } from "firebase/firestore"
 
- const FormCreate =  () => {
+ const FormCreate =  ({navigation}) => {
     const [nom, setNom]= useState("");
     const [age, setAge]= useState("0");
     const [email, setEmail]= useState("");
@@ -23,7 +23,7 @@ import { collection , addDoc , getDocs , query, where } from "firebase/firestore
              // ajouter une nouvelle ligne dans la table etudiant
 
              // vérifier si on a un utilisateur qui a déjà le même email que celui saisit
-             const q = query(collection(db, "etudiant"), where("email", "==", etudiant.email));
+            const q = query(collection(db, "etudiant"), where("email", "==", etudiant.email));
 
             const querySnapshot =  await getDocs(q)
             const test = [] ;
@@ -54,6 +54,7 @@ import { collection , addDoc , getDocs , query, where } from "firebase/firestore
     }
   return (
     <View>
+        
       <Text>Créer un nouveau profil étudiant</Text>
       <TextInput placeholder="nom" onChangeText={function(text){ setNom(text) ; setErreurs([]);}} value={nom} style={styles.input} />
       <TextInput placeholder="age" onChangeText={function(text){ setAge(text) ; setErreurs([]);}} value={age} style={styles.input} keyboardType="numeric"/>
@@ -63,12 +64,24 @@ import { collection , addDoc , getDocs , query, where } from "firebase/firestore
         data={erreurs}
         renderItem={function({item}){ return <Text>{item}</Text> }}
       />
+      <View style={{ marginTop : 10 }}>
+      <Button onPress={function(){
+            navigation.goBack()
+        }} title="retour à l'accueil" color="purple"/>
+      </View>
     </View>
   )
 }
 export default FormCreate
+
 const styles = StyleSheet.create({
     input : {
         borderColor : "black" , padding : 10 , borderWidth : 2 , marginVertical : 10
     }
 })
+
+
+// ajouter le module permettant d'ajouter la nvigation de type Stack 
+// npm install @react-navigation/native @react-navigation/native-stack
+// npx expo install react-native-screens react-native-safe-area-context
+// ajouter dans l'écran d'Accueil un lien qui va permettre d'afficher le formulaire que l'on vient de créer 

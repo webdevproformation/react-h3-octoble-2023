@@ -1,11 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet,  View } from 'react-native';
 import FormCreate from './composants/FormCreate';
+import { NavigationContainer } from "@react-navigation/native"
+import { createNativeStackNavigator } from "@react-navigation/native-stack"
+
+import Constants from 'expo-constants';
+import Accueil from './composants/Accueil';
+
+const STATUSBAR_HEIGHT = Constants.statusBarHeight
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <FormCreate />
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen component={Accueil} name='accueil' /> 
+          <Stack.Screen component={FormCreate} name='create-etudiant' /* options={{
+            headerShown : false
+          }} */ /> 
+        </Stack.Navigator>
+      </NavigationContainer>
       <StatusBar style="auto" />
     </View>
   );
@@ -13,9 +29,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    marginTop : STATUSBAR_HEIGHT,
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
