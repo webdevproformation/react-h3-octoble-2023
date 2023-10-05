@@ -4,7 +4,7 @@ import { StyleSheet, Text, View , Button , TextInput , FlatList } from 'react-na
 import React , {useState} from 'react'
 import { schemaEtudiant } from "../verif/etudiant"
 import db from "../config"
-import { collection , addDoc } from "firebase/firestore"
+import { collection , addDoc , getDocs , query, where } from "firebase/firestore"
 
 const FormCreate = () => {
     const [nom, setNom]= useState("");
@@ -21,6 +21,19 @@ const FormCreate = () => {
         if(!error){ // si erreur est undefined 
              // ajouter dans Firebase 
              // ajouter une nouvelle ligne dans la table etudiant
+
+             // vérifier si on a un utilisateur qui a déjà le même email que celui saisit
+             const q = query(collection(db, "etudiant"), where("email", "==", etudiant.email));
+             getDocs(q).then(function(querySnapshot ){
+                querySnapshot.forEach((doc) => {
+                    // doc.data() is never undefined for query doc snapshots
+                    console.log(doc.id, " => ", doc.data());
+                  })
+             })
+
+
+             return ;
+
              addDoc(collection(db, "etudiant") , etudiant).then(function(reponse){
                 setNom("")
                 setAge("0")
