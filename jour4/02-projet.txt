@@ -7,3 +7,10 @@ npx create-expo-app --template
 
 cd jour4-tp 
 npm i firebase joi 
+
+vérifier que l'émulation est bien démarré 
+=> lancer le serveur de développement
+
+npm run android
+
+=> 
