@@ -17,6 +17,7 @@ const FormCreate = () => {
         const { error } = schemaEtudiant.validate( etudiant , {abortEarly : false}); 
         // effectuer les 11 verifications 
         console.log(error); 
+        setErreurs([]);
         if(!error){ // si erreur est undefined 
              // ajouter dans Firebase 
              // ajouter une nouvelle ligne dans la table etudiant
@@ -27,16 +28,17 @@ const FormCreate = () => {
                 alert("le profil utilisateur est bien créé en base de donnée")
              })
         }else {
-            console.log(error)
+            const tableauErreurs = error.details.map(function(item){ return item.message });
+            setErreurs(tableauErreurs);
         }
 
     }
   return (
     <View>
       <Text>Créer un nouveau profil étudiant</Text>
-      <TextInput placeholder="nom" onChangeText={function(text){ setNom(text)}} value={nom} style={styles.input} />
-      <TextInput placeholder="age" onChangeText={function(text){ setAge(text)}} value={age} style={styles.input} keyboardType="numeric"/>
-      <TextInput placeholder="email" onChangeText={function(text){ setEmail(text)}} value={email} style={styles.input}/>
+      <TextInput placeholder="nom" onChangeText={function(text){ setNom(text) ; setErreurs([]);}} value={nom} style={styles.input} />
+      <TextInput placeholder="age" onChangeText={function(text){ setAge(text) ; setErreurs([]);}} value={age} style={styles.input} keyboardType="numeric"/>
+      <TextInput placeholder="email" onChangeText={function(text){ setEmail(text) ; setErreurs([]);}} value={email} style={styles.input}/>
       <Button title="créer" onPress={handleSubmit} />
       <FlatList 
         data={erreurs}
