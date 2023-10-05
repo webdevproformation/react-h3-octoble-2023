@@ -1,5 +1,4 @@
-// rnfes
-// extension ajouter en plus l'extension 
+// rnfes 
 import { StyleSheet, Text, View , Button , TextInput , FlatList } from 'react-native'
 import React , {useState} from 'react'
 import { schemaEtudiant } from "../verif/etudiant"
@@ -40,13 +39,11 @@ import { collection , addDoc , getDocs , query, where } from "firebase/firestore
              
             // ici on va pouvoir effecter l'ajout
             await addDoc(collection(db, "etudiant") , etudiant) ;
-
             setNom("")
             setAge("0")
             setEmail("")
             alert("le profil utilisateur est bien créé en base de donnée")
             navigation.push('accueil') ; 
-             
         }else {
             const tableauErreurs = error.details.map(function(item){ return item.message });
             setErreurs(tableauErreurs);
