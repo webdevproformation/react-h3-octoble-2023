@@ -42,7 +42,9 @@ const Accueil = ({navigation}) => {
         data={etudiants}
         renderItem={function({item}){ 
             return <View style={{ flexDirection : "row" , borderWidth:1 , borderBlockColor : "black" , padding : 5 , alignItems : "center"}}>
-                <Button onPress={function(){}} color="orange" title="m"/>
+                <Button onPress={function(){
+                    navigation.navigate("update-etudiant" , {id : item.id })
+                }} color="orange" title="m"/>
                 <Button onPress={function(){  
                     supprimer(item.id)
                 }} color="red" title="s"/>

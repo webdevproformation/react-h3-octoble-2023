@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 
 import Constants from 'expo-constants';
 import Accueil from './composants/Accueil';
+import FormUpdate from './composants/FormUpdate';
 
 const STATUSBAR_HEIGHT = Constants.statusBarHeight
 
@@ -20,6 +21,7 @@ export default function App() {
           <Stack.Screen component={FormCreate} name='create-etudiant' /* options={{
             headerShown : false
           }} */ /> 
+          <Stack.Screen component={FormUpdate} name='update-etudiant' />
         </Stack.Navigator>
       </NavigationContainer>
       <StatusBar style="auto" />

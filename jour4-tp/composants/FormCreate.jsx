@@ -45,6 +45,7 @@ import { collection , addDoc , getDocs , query, where } from "firebase/firestore
             setAge("0")
             setEmail("")
             alert("le profil utilisateur est bien créé en base de donnée")
+            navigation.push('accueil') ; 
              
         }else {
             const tableauErreurs = error.details.map(function(item){ return item.message });
