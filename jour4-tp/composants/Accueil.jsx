@@ -1,17 +1,22 @@
 import { StyleSheet, Text, View , Button , FlatList } from 'react-native'
 import React , { useState, useEffect } from 'react'
-import db from "../config";
+import db from "../config" ;
 import { getDocs , collection , doc , deleteDoc } from "firebase/firestore"
-
+ 
 const Accueil = ({navigation}) => {
     const [etudiants , setEtudiants] = useState([]); 
     const [updateList , setUpdateList] = useState(false); 
 
     useEffect( function(){ 
 
+        // ipconfig pour trouvez la bonne ip 
+        /* fetch("http://192.168.33.1:9999").then(function(reponse){
+            return reponse.json();
+        }).then(function(data){ console.log(data)})
+ */
         getDocs(collection(db, "etudiant"))
         .then(function(snapShot){
-            const data = [];
+            const data = []; 
             snapShot.docs.map(function(doc){
                 data.push({...doc.data() , id : doc.id})
             })

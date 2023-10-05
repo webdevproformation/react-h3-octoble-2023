@@ -86,4 +86,6 @@ const styles = StyleSheet.create({
 // ajouter dans l'écran d'Accueil un lien qui va permettre d'afficher le formulaire que l'on vient de créer 
 
 
-// créer
+// créer composant qui s'appelle FormUpdate 
+// ce formulaire ressemble au formulaire FormCreate
+// la différence est que le formulaire doit être remplit avec les valeurs présentes en base de données

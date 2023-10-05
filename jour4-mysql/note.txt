@@ -1,0 +1,8 @@
+mkdir projet 
+cd projet 
+npm init --yes 
+npm i express mysql
+
+https://expressjs.com/en/guide/database-integration.html#mysql
+
+créer un fichier index.js 
