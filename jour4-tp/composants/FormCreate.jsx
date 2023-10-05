@@ -31,7 +31,6 @@ const FormCreate = () => {
                   })
              })
 
-
              return ;
 
              addDoc(collection(db, "etudiant") , etudiant).then(function(reponse){
