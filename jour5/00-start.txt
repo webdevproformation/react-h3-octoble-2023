@@ -46,3 +46,26 @@ function D(){ // formulaire
 
 // 1 Redux (installé) => State Manager => useState qui est partagé entre plusieurs composants 
 // 2 directement react => hook useContext / createContext 
+
+// stopper Expo 
+// cd ..
+
+// npx create-expo-app --template
+// cd jour5-tp
+// npm run android
+
+// créer un dossier composants
+// dans ce dossier vous allez réaliser plusieurs composants 
+
+// composant A 
+// afficher un texte : je suis le composant A 
+// composant B 
+// afficher un texte : je suis le composant B 
+// ajouter un bouton sur 
+// composant C 
+// afficher un texte : je suis le composant C 
+
+App => composant racine 
+    A  => parent
+        B  => fils
+        C  => fils 
