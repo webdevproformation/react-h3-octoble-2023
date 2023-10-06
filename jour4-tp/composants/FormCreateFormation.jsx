@@ -6,11 +6,11 @@ import { schemaFormation }  from "../verif/formation"
 
 const FormCreateFormation = ({navigation}) => {
     const [nom, setNom]= useState("premier formation");
-    const [description, setDescription]= useState("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae cupiditate corporis dignissimos maxime commodi eveniet esse numquam provident. Labore accusamus aspernatur, quam delectus sequi soluta veritatis ipsa reprehenderit, amet eius eaque quia vel dolorem. Nisi, amet est. Minima id neque alias repudiandae sit, quae magnam voluptatibus ducimus. Accusamus, unde expedita.");
+    const [description, setDescription]= useState("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae cupiditate corporis dignissimos maxime commodi eveniet esse numquam provident. ");
 
     const today = new Date();
     const dt = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-    
+
     const [date_debut, setDateDebut]= useState(dt);
     const [erreurs, setErreurs]= useState([]);
 

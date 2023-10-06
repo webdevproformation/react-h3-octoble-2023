@@ -1,0 +1,48 @@
+=> le fait d'avoir besoin de partager des informations entre les composants 
+
+=> quand on veut partager des informations entre les composants 
+=> via les pros 
+
+
+function A(){
+    // envoyer des informations du composant A => B 
+    return <B  largeur="10" hauteur="20" />
+
+}
+
+function B({ largeur , hauteur }){
+    // utiliser les valeurs dans le composant B 
+}
+
+// les props => permettent de partager des informations entre des composant Parent / Enfant 
+
+
+
+function A(){ // nav
+    return <View>
+            <B />{ partager des informations D => C ??  }
+            <C />
+        </View>
+}
+
+function B(){ // formulaire
+    return <D />
+}
+
+
+function C(){ // profil 
+    // utiliser là ??? 
+}
+
+
+function D(){ // formulaire
+    // info ici ???
+}
+
+// si vous avez des composants qui ne sont des parents directs ET que vous devez partager des informations entre elles 
+
+
+// vous avez 2 solutions 
+
+// 1 Redux (installé) => State Manager => useState qui est partagé entre plusieurs composants 
+// 2 directement react => hook useContext / createContext 
