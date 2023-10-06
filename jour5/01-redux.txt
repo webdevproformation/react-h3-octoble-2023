@@ -1,0 +1,13 @@
+comme useContext / createContext 
+
+permet de partager des informations entre les composants quand ils ne sont pas parents directs 
+
+---- 
+
+historiquement => Redux puis il y a useContext / createContext 
+
+npm i redux 
+
+npm install @reduxjs/toolkit
+
+=> 

@@ -5,6 +5,13 @@ import { CompteurContextProvider } from './context/compteurContext';
 import Menu from './composants/Menu';
 import Formulaire from './composants/Formulaire';
 import { ProfilContextProvider } from './context/profilContext';
+
+import Store from './store';
+
+import D from './composants/D';
+import E from './composants/E';
+
+
 export default function App() {
   return (
     <View style={styles.container}>
@@ -15,6 +22,10 @@ export default function App() {
         <Menu />
         <Formulaire />
       </ProfilContextProvider>
+      <Store>
+        <D />
+        <E />
+      </Store>
       <StatusBar style="auto" />
     </View>
   );
