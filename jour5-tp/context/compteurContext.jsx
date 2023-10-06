@@ -9,6 +9,8 @@ export const CompteurContext = createContext();
 // provider du context => où je veux pouvoir utiliser cette $_SESSION
 export function CompteurContextProvider ({children}){
     const [compteur, setCompteur]  = useState(0);
+    // utiliser compteur dans le composant C
+    // setCompteur dans le composant B 
     return <CompteurContext.Provider value={{compteur , setCompteur}}>
             {children}
     </CompteurContext.Provider>

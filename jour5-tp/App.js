@@ -1,16 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import A from './composants/A';
-
+import { CompteurContextProvider } from './context/compteurContext';
 export default function App() {
   return (
     <View style={styles.container}>
-      <A />
+      <CompteurContextProvider>{/** emballer le composant A avec le Provider */ }
+        <A />
+      </CompteurContextProvider>
       <StatusBar style="auto" />
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
