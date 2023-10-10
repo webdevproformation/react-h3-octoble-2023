@@ -10,21 +10,25 @@ import Store from './store';
 
 import D from './composants/D';
 import E from './composants/E';
+import Panier from './composants/Panier';
+import Catalogue from './composants/Catalogue';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CompteurContextProvider>{/** emballer le composant A avec le Provider */ }
+      {/**<CompteurContextProvider> emballer le composant A avec le Provider 
         <A />
       </CompteurContextProvider>
       <ProfilContextProvider>
         <Menu />
         <Formulaire />
-      </ProfilContextProvider>
-      <Store>
-        <D />
-        <E />
+      </ProfilContextProvider> */ }
+      <Store style={styles.container}>
+        {/* <D />
+        <E /> */}
+        <Panier />
+        <Catalogue />
       </Store>
       <StatusBar style="auto" />
     </View>

@@ -3,8 +3,7 @@ import React from 'react'
 import { useDispatch } from "react-redux"
 
 const E = () => {
-
-   const dispatch =  useDispatch();
+  const dispatch =  useDispatch();
 
   return (
     <View>

@@ -1,11 +1,12 @@
 import { Provider } from "react-redux"
 import { compteurReducer } from "../reducer/compteurReducer"
+import {panierReducer} from "../reducer/panierReducer"
 import { configureStore } from "@reduxjs/toolkit"
 
 import logger from "redux-logger"
 
 const store = configureStore({ 
-        reducer : { compteur : compteurReducer },
+        reducer : { compteur : compteurReducer , panier : panierReducer },
         middleware : [logger]
     })
 
